@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LibroLibre</title>
+  <link rel="stylesheet" href="./assets/CSS/style.css">
+  <script src="./script/eventos.js" defer></script>
+  <script src="./libros_lista.js" defer></script>
+</head>
+<body>
+  <header>
+    <div><strong>LibroLibre</strong></div>
+    <nav>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#registro">Registro</a>
+      <a href="#sobre">Sobre Nosotros</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="catalogo">
+        <h2>Biblioteca</h2>
+        <input type="text" id="busqueda" placeholder="Buscar por título, autor o género">
+        <button onclick="buscarLibros()">Buscar</button>
+        <h2>Sugeridos</h2>
+        <div id="lista-sugeridos"></div>
+    </section>
+
+    <section id="registro">
+      <h2>Registro de usuarios</h2>
+      <div class="form-group">
+        <input type="text" id="nombre" placeholder="Nombre completo">
+      </div>
+      <div class="form-group">
+        <input type="email" id="correo" placeholder="Correo electrónico">
+      </div>
+      <div class="form-group">
+        <input type="password" id="contrasena" placeholder="Contraseña">
+      </div>
+      <button onclick="registrarUsuario()">Registrarse</button>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre Nosotros</h2>
+      <p>LibroLibre es una biblioteca digital creada por tres entusiastas de la lectura con el objetivo de facilitar el acceso a libros electrónicos y audiolibros de manera simple y eficiente.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 LibroLibre. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
